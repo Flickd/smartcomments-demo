@@ -1,0 +1,74 @@
+{
+  "name": "code-change-tracker",
+  "displayName": "Code Change Tracker",
+  "description": "Tracks code changes and displays them in a panel",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-change-tracker.showChangeTracker",
+        "title": "Show Change Tracker"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "change-tracker",
+          "title": "Change Tracker",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "change-tracker": [
+        {
+          "id": "changeTrackerView",
+          "name": "Changes",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Code Change Tracker",
+      "properties": {
+        "codeChangeTracker.huggingFaceToken": {
+          "type": "string",
+          "default": "",
+          "description": "Hugging Face API token for comment generation"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^16.0.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.12",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}
