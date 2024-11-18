@@ -6,8 +6,8 @@ This is the demo for the Automated Comment Generation.
 
 There is a simplistic UI, that tracks the last changes in the user's file and after a few seconds shows an AI generated inline comment. With the accept button the comment is written into the file at the right place. For the AI we used https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct integrated over the Huggingface API.
 
-## Testing Guide
-Follow these steps if you want to test this extension out for yourselves:
+## Try it out yourself
+Follow these steps if you want to test this extension out for yourself:
 
 1. Install VS Code or Cursor: https://code.visualstudio.com/download , https://www.cursor.com/
 2. Install Git https://git-scm.com/downloads and Node.js https://nodejs.org/en
