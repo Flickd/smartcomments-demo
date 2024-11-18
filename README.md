@@ -1,71 +1,19 @@
 # smartcomments-demo README
 
-This is the README for your extension "smartcomments-demo". After writing up a brief description, we recommend including the following sections.
+This is the demo for the Automated Comment Generation.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+There is a simplistic UI, that tracks the last changes in the user's file and after a few seconds shows an AI generated inline comment. With the accept button the comment is written into the file at the right place. For the AI we used https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct integrated over the Huggingface API.
 
-For example if there is an image subfolder under your extension project workspace:
+## Testing Guide
+Follow these steps if you want to test this extension out for yourselves:
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Install VS Code or Cursor: https://code.visualstudio.com/download , https://www.cursor.com/
+2. Install Git https://git-scm.com/downloads and Node.js https://nodejs.org/en
+3. Clone the Repo or just download the .zip
+4. Open the Project in VS Code
+5. You need to set your Huggingface API key/token by presing ´Ctrl + Shift + P´ and searching ´Open User Settings´. There you search for ´Hugging Face API´ and you should see an input box where you can place your Key/token.
+6. Press f5
+This should open a new VS Code window for testing the extension.
+7. You can use this new window normally. Open the extension UI by clicking the extension icon. Create a python file and type some code, than you should see the last changes and AI generated comments appear in the UI.
