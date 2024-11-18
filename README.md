@@ -13,7 +13,7 @@ Follow these steps if you want to test this extension out for yourselves:
 2. Install Git https://git-scm.com/downloads and Node.js https://nodejs.org/en
 3. Clone the Repo or just download the .zip
 4. Open the Project in VS Code
-5. Open the Terminal by pressing ´Ctrl + Ö´ and execute the command ´npm install´. This will install all required packages for the extension.
+5. Open the Terminal by pressing `Ctrl + Ö` and execute the command ´npm install´. This will install all required packages for the extension.
 6. You need to set your Huggingface API key/token by presing ´Ctrl + Shift + P´ and searching ´Open User Settings´. There you search for ´Hugging Face API´ and you should see an input box where you can place your Key/token.
 7. Press f5
 This should open a new VS Code window for testing the extension.
