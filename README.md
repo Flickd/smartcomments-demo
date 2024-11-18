@@ -18,3 +18,5 @@ Follow these steps if you want to test this extension out for yourselves:
 7. Press f5
 This should open a new VS Code window for testing the extension.
 8. You can use this new window normally. Open the extension UI by clicking the extension icon. Create a python file and type some code, than you should see the last changes and AI generated comments appear in the UI.
+
+It is normal that the text overlaps in the UI, we just didnt bother to format it well. The important thing is that API, the UI, changes tracker and buttons work.
